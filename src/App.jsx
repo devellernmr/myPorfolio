@@ -1,9 +1,11 @@
-import { useState } from 'react'
-import './App.css'
+import React from "react"
+import Navbar from "./Pages/Navbar/Navbar"
+import "./App.css"
 
 function App() {
   return (
     <>
+      <Navbar />
     </>
   )
 }
