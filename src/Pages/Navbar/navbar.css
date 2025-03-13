@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    padding: .5rem 2rem;
+    padding: .6rem 4.5rem;
     z-index: 1000;
     font-family: "Inter", sans-serif;
   
@@ -77,7 +77,16 @@
       .header{
         padding: .1rem 2rem;
       }
-  
+
+      .logo {
+        color: white;
+        font-size: 1.6rem;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        transition: 1s ease-in-out;
+      }
+
       .navBar {
         position: absolute;
         height: max-content;
@@ -89,7 +98,7 @@
         transform: translate(-50%);
         z-index: 2000;
         box-shadow: 0 2px 4px var(--secondary-color);
-        background-color: rgba(0, 0, 0, 0.747);
+        background-color: rgba(0, 0, 0, 0.925);
         transition: 0.9s ease-in-out;
   
         .navLists {
@@ -139,10 +148,11 @@
         display: block;
       }
     }
+    }
   
     .toggleNavbar {
       .icon {
-        font-size: 35px;
+        font-size: 40px;
         color: white;
         cursor: pointer;
         &:hover.icon {
@@ -150,4 +160,12 @@
         }
       }
     }
-  }
+
+    /*Media Query for the Navbar */
+
+    @media screen and (max-width: 426px) {
+      .header {
+        padding: .6rem 2.5rem;
+      }
+    };
+  
