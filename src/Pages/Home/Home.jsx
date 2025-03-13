@@ -17,7 +17,7 @@ const Home = () => {
             JavaScript e React. Confira meus projetos!
           </p>
           <div className="imgDiv">
-          <img className="img-mobile" src="public/img/laptop+smartphone.png" alt="" />
+          <img className="img-mobile" src="../public/img/laptop+smartphone.png" alt="" />
           </div>
           <div className="buttonDiv flex">
             <a href="#contact" className="button buttonContact">
@@ -29,7 +29,7 @@ const Home = () => {
           </div>
         </div>
         <div className="imgDiv">
-            <img className="img-pc" src="public/img/laptop.png" alt="" />
+            <img className="img-pc" src="../public/img/laptop.png" alt="" />
         </div>
       </div>
     </section>
