@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
 
         <div className="btn github-btn">
-          <a href="https://github.com/LeoEller">
+          <a href="https://github.com/devellernmr" target="_blank">
             <AiFillGithub className="icon" />
           </a>
         </div>
