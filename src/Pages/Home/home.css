@@ -14,7 +14,7 @@
       font-family: "Inter", sans-serif;
 
       .homeMain {
-        font-size: 6.5rem;
+        font-size: clamp(4rem, calc(4vw + 1rem), 6.5rem);
         font-weight: 400;
         color: white;
         filter: drop-shadow(0px 0px 10px #720091);
@@ -27,13 +27,15 @@
       }
 
       .homeSecond {
-        width: 80%;
-        font-size: 1.1rem;
+        width: 90%;
+        font-size: clamp(0.8rem, 1rem, 1.1rem);
         font-weight: 100;
         color: white;
         filter: drop-shadow(0px 0px 10px rgba(124, 124, 124, 0.712));
         text-transform: uppercase;
+        text-align: justify;
         letter-spacing: 5px;
+        margin-top: 2%;
       }
 
       .buttonDiv {
@@ -81,18 +83,21 @@
       }
     }
     .imgDiv {
-      width: 70%;
-      align-items: center;
-      justify-content: center;
+      height: 90%;
+      width: 90%;
+      display: flex;
       padding: 3rem 0 0 0;
+      justify-content: flex-end;
+      padding: 3rem 0 0 0;
+      margin-top: 1rem;
       img {
-        width: 100%;
-        height: auto;
+        height: 100%;
+        width: auto;
         filter: drop-shadow(0px 0px 50px #720091);
       }
-      .img-mobile{
-        display: none;
-      }
+    }
+    .imgDivMobile {
+      display: none;
     }
   }
 
@@ -107,7 +112,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        align-items: center; 
+        align-items: center;
 
         .homeMain {
           font-size: 10.5vw;
@@ -143,14 +148,8 @@
         display: none;
       }
 
-      .img-mobile{
+      .imgDivMobile {
         display: block;
-        width: 100%;
-        height: auto;
-        filter: drop-shadow(0px 0px 50px #720091);
-      }
-
-      .imgDiv{
         padding: 0;
         top: -6%;
         z-index: -1;
@@ -158,6 +157,16 @@
         position: relative;
       }
 
+      .img-mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0px 0px 50px #720091);
+      }
+
+      .imgDiv {
+        display: none;
+      }
     }
   }
 
@@ -173,7 +182,7 @@
         }
 
         .homeSecond {
-          font-size: .8rem;
+          font-size: 0.8rem;
           letter-spacing: 3px;
           text-align: justify;
           border-top: solid 1px white;
@@ -183,7 +192,7 @@
         }
 
         .imgDiv {
-            margin-top: 1.2rem;
+          margin-top: 1.2rem;
         }
 
         .buttonDiv {
@@ -200,6 +209,5 @@
         }
       }
     }
-    
   }
 }

@@ -16,8 +16,8 @@ const Home = () => {
             Programador Front-End de 16 anos especializado em HTML, CSS,
             JavaScript e React. Confira meus projetos!
           </p>
-          <div className="imgDiv">
-          <img className="img-mobile" src="img/laptop+smartphone.png" alt="" />
+          <div className="imgDivMobile">
+            <img className="img-mobile" src="img/laptop+smartphone.png" alt="" />
           </div>
           <div className="buttonDiv flex">
             <a href="#contact" className="button buttonContact">
