@@ -81,7 +81,7 @@
       }
     }
     .imgDiv {
-      width: 100%;
+      width: 70%;
       align-items: center;
       justify-content: center;
       padding: 3rem 0 0 0;
@@ -141,6 +141,13 @@
       }
       .img-pc {
         display: none;
+      }
+
+      .img-mobile{
+        display: block;
+        width: 100%;
+        height: auto;
+        filter: drop-shadow(0px 0px 50px #720091);
       }
 
       .imgDiv{
