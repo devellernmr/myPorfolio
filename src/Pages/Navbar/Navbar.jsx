@@ -25,7 +25,7 @@ const Navbar = () => {
     <section className="navBarSection">
       <header className="header flex">
         <div className="logoDiv">
-          <a href="https://github.com/devellernmr" className="logo btn">
+          <a href="https://github.com/devellernmr" target="_blank" className="logo btn">
             <h1>LeoEller</h1>
           </a>
         </div>
