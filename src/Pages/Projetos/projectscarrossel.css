@@ -5,6 +5,7 @@
     padding: 20px;
     text-align: center;
     font-family: "Onest", sans-serif;
+    height: 50vh;
 }
 
 .project-section h1 {
@@ -12,7 +13,6 @@
     font-weight: 100;
     letter-spacing: 7px;
     margin-bottom: 10px;
-    height: 50vh;
 }
 
 /* Container do carrossel */
