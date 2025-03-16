@@ -1,7 +1,6 @@
 .homeSection {
   background-color: rgba(240, 248, 255, 0);
   width: 100%;
-  height: 100vh;
 
   .homeDiv {
     display: flex;
@@ -16,6 +15,7 @@
       .homeMain {
         font-size: clamp(4rem, calc(4vw + 1rem), 6.5rem);
         font-weight: 400;
+        text-align: left;
         color: white;
         filter: drop-shadow(0px 0px 10px #720091);
         letter-spacing: 12px;
@@ -84,7 +84,7 @@
     }
     .imgDiv {
       height: 90%;
-      width: 90%;
+      width: 100%;
       display: flex;
       padding: 3rem 0 0 0;
       justify-content: flex-end;
@@ -102,112 +102,113 @@
   }
 
   @media (max-width: 768px) {
-    .homeDiv {
-      flex-direction: column;
-      align-items: center;
-      padding: 3rem;
-
-      .homeText {
-        padding: 6rem 5rem;
-        width: 100%;
-        display: flex;
+      .homeDiv {
         flex-direction: column;
         align-items: center;
+        padding: 3rem;
 
-        .homeMain {
-          font-size: 10.5vw;
-          letter-spacing: 8px;
-          font-weight: 300;
-          line-height: 5rem;
-          letter-spacing: 4px;
-        }
+        .homeText {
+          padding: 6rem 5rem;
+          width: 100%;
+          height: 42rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-        .homeSecond {
-          font-size: 1.1rem;
-          letter-spacing: 3px;
-          text-align: justify;
-          border-top: solid 1px white;
-          margin-top: 1.5rem;
-          padding-top: 1.5rem;
-          width: 125%;
-        }
+          .homeMain {
+            font-size: 10.5vw;
+            letter-spacing: 8px;
+            font-weight: 300;
+            line-height: 5rem;
+            letter-spacing: 4px;
+          }
 
-        .buttonDiv {
-          margin-top: 0rem;
-          top: -4rem;
-          position: relative;
+          .homeSecond {
+            font-size: 1.1rem;
+            letter-spacing: 3px;
+            text-align: justify;
+            border-top: solid 1px white;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            width: 125%;
+          }
 
-          .button {
-            font-size: 4vw;
-            width: 18rem;
-            height: 4.5rem;
+          .buttonDiv {
+            margin-top: 0rem;
+            top: -4rem;
+            position: relative;
+
+            .button {
+              font-size: 4vw;
+              width: 18rem;
+              height: 4.5rem;
+            }
           }
         }
-      }
-      .img-pc {
-        display: none;
-      }
-
-      .imgDivMobile {
-        display: block;
-        padding: 0;
-        top: -6%;
-        z-index: -1;
-        width: 100vw;
-        position: relative;
-      }
-
-      .img-mobile {
-        display: block;
-        width: 100%;
-        height: auto;
-        filter: drop-shadow(0px 0px 50px #720091);
-      }
-
-      .imgDiv {
-        display: none;
-      }
-    }
-  }
-
-  @media (max-width: 425px) {
-    .homeDiv {
-      .homeText {
-        padding: 4.5rem 2rem;
-        .homeMain {
-          font-size: 9.6vw;
-          font-weight: 300;
-          line-height: 3rem;
-          letter-spacing: 4px;
+        .img-pc {
+          display: none;
         }
 
-        .homeSecond {
-          font-size: 0.8rem;
-          letter-spacing: 3px;
-          text-align: justify;
-          border-top: solid 1px white;
-          margin-top: 1.5rem;
-          padding-top: 1.5rem;
-          width: 125%;
+        .imgDivMobile {
+          display: block;
+          padding: 0;
+          top: -6%;
+          z-index: -1;
+          width: 100vw;
+          position: relative;
+        }
+
+        .img-mobile {
+          display: block;
+          width: 100%;
+          height: auto;
+          filter: drop-shadow(0px 0px 50px #720091);
         }
 
         .imgDiv {
-          margin-top: 1.2rem;
+          display: none;
         }
+      }
+    }
 
-        .buttonDiv {
-          margin-top: 0rem;
-          top: -3rem;
-          position: relative;
+    @media (max-width: 425px) {
+      .homeDiv {
+        .homeText {
+          padding: 4.5rem 2rem;
+          .homeMain {
+            font-size: 9.6vw;
+            font-weight: 300;
+            line-height: 3rem;
+            letter-spacing: 4px;
+          }
 
-          .button {
-            margin-right: 0;
-            font-size: 4vw;
-            width: 10rem;
-            height: 3.2rem;
+          .homeSecond {
+            font-size: 0.8rem;
+            letter-spacing: 3px;
+            text-align: justify;
+            border-top: solid 1px white;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            width: 125%;
+          }
+
+          .imgDiv {
+            margin-top: 1.2rem;
+          }
+
+          .buttonDiv {
+            margin-top: 0rem;
+            top: -3rem;
+            position: relative;
+
+            .button {
+              margin-right: 0;
+              font-size: 4vw;
+              width: 10rem;
+              height: 3.2rem;
+            }
           }
         }
       }
     }
   }
-}
