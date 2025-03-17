@@ -28,6 +28,7 @@ const ProjectsSection = () => {
             <div className="containerTextProject">
               <h2>Site Mesa Posta</h2>
               <p>Um site para venda de produtos de uma empresa de Mesa Posta</p>
+              <a href="https://devellernmr.github.io/CidaCunhaServir/" target="_blank"><button>Visite</button></a>
             </div>
           </div>
           <div className="projectContainer">
@@ -37,6 +38,7 @@ const ProjectsSection = () => {
             <div className="containerTextProject">
               <h2>Site Curso Front-End</h2>
               <p>Um site de venda de curso de programação front-end</p>
+              <a href="https://devellernmr.github.io/portifolio_curso/" target="_blank"><button>Visite</button></a>
             </div>
           </div>
           <div className="projectContainer">
@@ -46,6 +48,7 @@ const ProjectsSection = () => {
             <div className="containerTextProject">
               <h2>Site Portifolio</h2>
               <p>Um site para venda de produtos de uma empresa de Mesa Posta</p>
+              <a href="https://devellernmr.github.io/My-Portfolio/" target="_blank"><button>Visite</button></a>
             </div>
           </div>
         </div>
